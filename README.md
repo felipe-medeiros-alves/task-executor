@@ -121,7 +121,3 @@ An assistant drafted the first implementation from the case text. One suggestion
 Out of scope, on purpose: retries, schedules, disk, distribution, and parallelism. A durable workflow runner would persist each step and could run independent tasks together. This library does neither. It also keeps no memory between `Execute` calls.
 
 If two task identifiers are duplicated, the plan is rejected as invalid and cycle detection is skipped, because the graph is ambiguous. Self-dependencies are reported on their own and are not also reported as a one-node cycle.
-
-## Not done
-
-The explanation video is not recorded. Before sending, publish this directory as its own repository (the case catalog asks you not to open a pull request there), put the commit hash and the video link in this README, and replace the time note at the top with the time you actually spent.
