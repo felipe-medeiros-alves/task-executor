@@ -1,4 +1,4 @@
-# Case 08 — Task executor with dependencies
+# Task executor with dependencies
 
 Deterministic in-process executor for a plan of simulated tasks. A task runs only after every dependency has succeeded. A failure blocks dependents and does not stop independent work. An invalid plan is rejected before any action runs.
 
