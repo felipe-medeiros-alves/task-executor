@@ -1,0 +1,6 @@
+# Case document example. B fails and blocks D. C and E still run.
+A ok
+B fail disk full <- A
+C ok <- A
+D ok <- B,C
+E ok

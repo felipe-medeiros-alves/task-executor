@@ -1,0 +1,7 @@
+# Fictitious annual-report filing. A failed standing check blocks the
+# submission. Notifying stakeholders does not depend on that check.
+collect-records ok
+notify-stakeholders ok
+prepare-annual-report ok <- collect-records
+validate-standing fail standing is delinquent <- collect-records
+submit-annual-report ok <- prepare-annual-report,validate-standing
